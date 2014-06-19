@@ -114,59 +114,59 @@ _xmms2_list() {
 
 _xmms2_move() {
 	_arguments \
-		'(-p --playlist)'{-p, --playlist}'[Playlist to act on]' \
-		'(-n --next)'{-n, --next}'[Move the matching tracks after the current track]' \
-		'(-a --at)'{-a, --at}'[Move the matching tracks by an offset or to a position]' \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-p --playlist)'{-p,--playlist}'[Playlist to act on]' \
+		'(-n --next)'{-n,--next}'[Move the matching tracks after the current track]' \
+		'(-a --at)'{-a,--at}'[Move the matching tracks by an offset or to a position]' \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_next() {
-	_arguemnts \
-		'(-h --help)'{-h, --help}'[Display command help]'
+	_arguments \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_pause() {
-	_arguemnts \
-		'(-h --help)'{-h, --help}'[Display command help]'
+	_arguments \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_play() {
-	_arguemnts \
-		'(-h --help)'{-h, --help}'[Display command help]'
+	_arguments \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_prev() {
-	_arguemnts \
-		'(-h --help)'{-h, --help}'[Display command help]'
+	_arguments \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_remove() {
-	_arguemnts \
-		'(-h --help)'{-h, --help}'[Display command help]' \
+	_arguments \
+		'(-h --help)'{-h,--help}'[Display command help]' \
 		':index or offset:_complete_playlist_items_id'
 }
 
 _xmms2_stop() {
-	_arguemnts \
-		'(-h --help)'{-h, --help}'[Display command help]'
+	_arguments \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_search() {
 	_arguments \
-		'(-o --order)'{-o, --order}'[List of properties to order by (prefix by '-' for reverse ordering)]' \
-		'(-l --columns)'{-l, --columns}'[List of properties to use as columns]' \
-		'(-i --stdin)'{-i, --stdin}'[Read pattern from stdin (inline mode only)]' \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-o --order)'{-o,--order}'[List of properties to order by (prefix by '-' for reverse ordering)]' \
+		'(-l --columns)'{-l,--columns}'[List of properties to use as columns]' \
+		'(-i --stdin)'{-i,--stdin}'[Read pattern from stdin (inline mode only)]' \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_seek() {
-	_arguemnts \
-		'(-h --help)'{-h, --help}'[Display command help]'
+	_arguments \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_toggle() {
-	_arguemnts \
-		'(-h --help)'{-h, --help}'[Display command help]'
+	_arguments \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_collection() {
@@ -194,40 +194,40 @@ _xmms2_collection() {
 
 _xmms2_collection_config() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]'\
+		'(-h --help)'{-h,--help}'[Display command help]'\
 		':collection:_complete_collection'
 }
 
 _xmms2_collection_create() {
 	_arguments \
-		'(-f --force)'{-f, --force}'[Force creating of the collection, overwrite an existing collection if needed]' \
-		'(-c --collection)'{-c, --collection}'[Copy an existing collection to the new one]:collection:_complete_collection' \
-		'(-e --empty)'{-e, --empty}'[Initialize an empty collection]' \
-		'(-i --stdin)'{-i, --stdin}'[Read the pattern from stdin (inline mode only)]' \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-f --force)'{-f,--force}'[Force creating of the collection, overwrite an existing collection if needed]' \
+		'(-c --collection)'{-c,--collection}'[Copy an existing collection to the new one]:collection:_complete_collection' \
+		'(-e --empty)'{-e,--empty}'[Initialize an empty collection]' \
+		'(-i --stdin)'{-i,--stdin}'[Read the pattern from stdin (inline mode only)]' \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_collection_list() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]' \
+		'(-h --help)'{-h,--help}'[Display command help]' \
 }
 
 _xmms2_collection_remove() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]'\
+		'(-h --help)'{-h,--help}'[Display command help]'\
 		':collection:_complete_collection'
 }
 
 _xmms2_collection_rename() {
 	_arguments \
-		'(-f --force)'{-f, --force}'[Force renaming of the collection, overwrite an existing collection if needed]' \
-		'(-h --help)'{-h, --help}'[Display command help]' \
+		'(-f --force)'{-f,--force}'[Force renaming of the collection, overwrite an existing collection if needed]' \
+		'(-h --help)'{-h,--help}'[Display command help]' \
 		':old name:_complete_collection'
 }
 
 _xmms2_collection_show() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]' \
+		'(-h --help)'{-h,--help}'[Display command help]' \
 }
 
 _xmms2_playlist() {
@@ -258,32 +258,32 @@ _xmms2_playlist() {
 
 _xmms2_playlist_clear() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]' \
+		'(-h --help)'{-h,--help}'[Display command help]' \
 		':playlist:_complete_playlist'
 }
 
 _xmms2_playlist_config() {
 	_arguments \
-		'(-t --type)'{-t, --type}'[Change the type of the playlist: list, queue, pshuffle]' \
-		'(-s --history)'{-s, --history}'[Size of the history of played tracks (for queue, pshuffle)]' \
-		'(-u --upcoming)'{-u, --upcoming}'[Number of upcoming tracks to maintain (for pshuffle)]' \
-		'(-i --input)'{-i, --input}'[Input collection for the playlist (for pshuffle)]:collection:_complete_collection' \
-		'(-j --jumplist)'{-j, --jumplist}'[Jump to another playlist when the end of the playlist is reached]' \
-		'(-h --help)'{-h, --help}'[Display command help]' \
+		'(-t --type)'{-t,--type}'[Change the type of the playlist: list, queue, pshuffle]' \
+		'(-s --history)'{-s,--history}'[Size of the history of played tracks (for queue, pshuffle)]' \
+		'(-u --upcoming)'{-u,--upcoming}'[Number of upcoming tracks to maintain (for pshuffle)]' \
+		'(-i --input)'{-i,--input}'[Input collection for the playlist (for pshuffle)]:collection:_complete_collection' \
+		'(-j --jumplist)'{-j,--jumplist}'[Jump to another playlist when the end of the playlist is reached]' \
+		'(-h --help)'{-h,--help}'[Display command help]' \
 		':playlist:_complete_playlist'
 }
 
 _xmms2_playlist_create() {
 	_arguments \
-		'(-s --switch)'{-s, --switch}'[Switch to the newly created playlist]' \
-		'(-p --playlist)'{-p, --playlist}'[Copy the content of the playlist into the new playlist]:playlist:_complete_playlist' \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-s --switch)'{-s,--switch}'[Switch to the newly created playlist]' \
+		'(-p --playlist)'{-p,--playlist}'[Copy the content of the playlist into the new playlist]:playlist:_complete_playlist' \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_playlist_list() {
 	_arguments \
-		'(-a --all)'{-a, --all}'[Include hidden playlists]' \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-a --all)'{-a,--all}'[Include hidden playlists]' \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_playlist_remove() {
@@ -292,21 +292,21 @@ _xmms2_playlist_remove() {
 
 _xmms2_playlist_rename() {
 	_arguments \
-		'(-f --force)'{-f, --force}'[Force the rename of the collection, overwrite an existing collection if needed]' \
-		'(-p --playlist)'{-p, --playlist}'[Rename the given playlist]:playlist:_complete_playlist' \
-		'(-h --help)'{-h, --help}'[Display command help]' \
+		'(-f --force)'{-f,--force}'[Force the rename of the collection, overwrite an existing collection if needed]' \
+		'(-p --playlist)'{-p,--playlist}'[Rename the given playlist]:playlist:_complete_playlist' \
+		'(-h --help)'{-h,--help}'[Display command help]' \
 		':old name:_complete_playlist'
 }
 
 _xmms2_playlist_shuffle() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_playlist_sort() {
 	_arguments \
-		'(-p --playlist)'{-p, --playlist}'[Rename the given playlist]:playlist:_complete_playlist' \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-p --playlist)'{-p,--playlist}'[Rename the given playlist]:playlist:_complete_playlist' \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_playlist_switch() {
@@ -343,67 +343,67 @@ _xmms2_server() {
 
 _xmms2_server_browse() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_server_config() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_server_import() {
 	_arguments \
-		'(-N --non)'{-N, --non}'[-recursive  Do not import directories recursively]' \
-		'(-h --help)'{-h, --help}'[Display command help]' \
+		'(-N --non)'{-N,--non}'[-recursive  Do not import directories recursively]' \
+		'(-h --help)'{-h,--help}'[Display command help]' \
 		':path:_files'
 }
 
 _xmms2_server_plugins() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_server_property() {
 	_argument \
-		'(-i --int)'{-i, --int}'[Force the value to be treated as an integer]' \
-		'(-s --string)'{-s, --string}'[Force the value to be treated as a string]' \
-		'(-D --delete)'{-D, --delete}'[Delete the selected property]' \
-		'(-l --long)'{-l, --long}'[Source to use when setting or deleting. Source preference when showing]' \
-		'(-a --all)'{-a, --all}'[Show values from all sources]' \
-		'(-t --all)'{-t, --all}'[-tied  Show values from all tied preferred sources]' \
-		'(-S --source)'{-S, --source}'[Property source]' \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-i --int)'{-i,--int}'[Force the value to be treated as an integer]' \
+		'(-s --string)'{-s,--string}'[Force the value to be treated as a string]' \
+		'(-D --delete)'{-D,--delete}'[Delete the selected property]' \
+		'(-l --long)'{-l,--long}'[Source to use when setting or deleting. Source preference when showing]' \
+		'(-a --all)'{-a,--all}'[Show values from all sources]' \
+		'(-t --all)'{-t,--all}'[-tied  Show values from all tied preferred sources]' \
+		'(-S --source)'{-S,--source}'[Property source]' \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_server_rehash() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_server_remove() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_server_shutdown() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_server_stats() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_server_sync() {
 	_arguments \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2_server_volume() {
 	_arguments \
-		'(-c --channel)'{-c, --channel}'[Get or set the volume only for one channel]' \
-		'(-h --help)'{-h, --help}'[Display command help]'
+		'(-c --channel)'{-c,--channel}'[Get or set the volume only for one channel]' \
+		'(-h --help)'{-h,--help}'[Display command help]'
 }
 
 _xmms2() {
